@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+input {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56px; } }
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 63px; } }
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 69px; } }
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px; } }
+html {
+  font-size: 15.625vw; }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px; } }
+body {
+  font-size: 0.01rem; }
+
+.denglu-header {
+  display: flex;
+  padding: 0.25rem 0.3rem;
+  background: #3698d9; }
+  .denglu-header a {
+    width: 3%;
+    display: inline-block;
+    margin-top: 0.05rem; }
+    .denglu-header a img {
+      width: 100%; }
+  .denglu-header p {
+    display: inline;
+    margin-left: 40.7%;
+    color: #fff;
+    font-size: 0.36rem; }
+
+.anliul {
+  margin-left: 0.1rem;
+  margin-top: 0.1rem; }
+  .anliul ul li {
+    width: 48%;
+    float: left;
+    margin-right: 0.1rem; }
+    .anliul ul li img {
+      width: 100%; }
+
+.foot{
+    height: 0.9rem;
+    border-top: 0.01rem solid #eee;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.foot ul{
+    display: flex;
+    flex: 1;
+}
+.foot ul li{
+    flex: 1;
+    height: 0.9rem;
+}
+.foot ul li a{
+    display: flex;
+    height: 0.9rem;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: #666;
+}
+.foot ul li a img{
+    height: 0.4rem;
+    width: 0.4rem;
+}
+.foot ul li a p{
+    font-size: 0.22rem;
+}
+.blue{
+  color: #3698d9;
+}
+
+/*# sourceMappingURL=anli.css.map */

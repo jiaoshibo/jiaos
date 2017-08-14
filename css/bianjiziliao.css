@@ -1,0 +1,190 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none}
+body{
+    background: #f4f4f4;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+/**
+ * 2016-01-13 订正
+ * 做适当限制
+ * 大于640的屏幕 固定为100px
+ * 同时需要对body或者最外层wrapper做max-width: 640px的限制
+ */
+/*
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+*/
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+/* 顶栏 start */
+.tit{
+    height: 1rem;
+    background: #3698d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.tit-in{
+    width: 5.8rem;
+    height: 1rem;
+    margin: auto;
+}
+.tit-in p{
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.36rem;
+    color: #fff;
+
+}
+.back{
+    float: left;
+    line-height: 1rem;
+    color: #fff;
+}
+.save{
+    float: right;
+    font-size: 0.3rem;
+    color: #fff;
+}
+/* 顶栏 end */
+.cont{
+    height: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cont-0{
+    font-size: 0.3rem;
+    line-height: 0.9rem;
+    margin: 0 auto;
+}
+.cont-0 p input{
+    float: right;
+    margin-right: 0.5rem;
+    height: 0.9rem;
+    border: 0;
+    background: #f4f4f4;
+    font-size: 0.28rem;
+    outline: NONE;
+    text-align: right;
+
+}
+.pp{
+    float: left;
+}
+.cont-0 img{
+    width: 0.53rem;
+    height: 0.53rem;
+    float: right;
+    margin-top: 0.23rem;
+    margin-right: 0.5rem;
+}
+.cont-1{
+    width: 6rem;
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+.cont-2{
+    width: 6rem;
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+.cont-3{
+    width: 6rem;
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+.cont-4{
+    width: 6rem;
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+.cont-5{
+    width: 6rem;
+    height: 0.9rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 底栏 */
+.foot{
+    height: 0.9rem;
+    border-top: 0.01rem solid #eee;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.foot ul{
+    display: flex;
+    flex: 1;
+}
+.foot ul li{
+    flex: 1;
+    height: 0.9rem;
+}
+.foot ul li a{
+    display: flex;
+    height: 0.9rem;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: #666;
+}
+.foot ul li a img{
+    height: 0.4rem;
+    width: 0.4rem;
+}
+.foot ul li a p{
+    font-size: 0.22rem;
+}
+.blue{
+    color: #3698d9;
+}

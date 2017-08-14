@@ -1,0 +1,756 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none}
+body{
+    background: #f4f4f4;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+/**
+ * 2016-01-13 订正
+ * 做适当限制
+ * 大于640的屏幕 固定为100px
+ * 同时需要对body或者最外层wrapper做max-width: 640px的限制
+ */
+/*
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+*/
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+.top{
+    margin-top: 1rem;
+    background: #3698d9;
+}
+
+.tit{
+    /* 顶部固定栏样式 */
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.36rem;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #3698d9;
+    z-index: 9;
+}
+.top img{
+    width: 100%;
+}
+.nav{
+    height: 3.05rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    flex: 1;
+}
+.nav ul li a{
+    display: flex;
+    flex: 1;
+    height: 1.5rem;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav ul li a p{
+    margin-top: 0.1rem;
+    font-size: 0.22rem;
+    color: #333;
+}
+.nav ul li a div{
+    height: 0.8rem;
+    width: 0.8rem;  
+}
+.icon1{
+    background: url("../images/icon1.png") no-repeat;
+    background-size: contain;
+}
+.icon2{
+    background: url("../images/icon2.png") no-repeat;
+    background-size: contain;
+}
+.icon3{
+    background: url("../images/icon3.png") no-repeat;
+    background-size: contain;
+}
+.icon4{
+    background: url("../images/icon4.png") no-repeat;
+    background-size: contain;
+}
+.icon5{
+    background: url("../images/icon5.png") no-repeat;
+    background-size: contain;
+}
+.icon6{
+    background: url("../images/icon6.png") no-repeat;
+    background-size: contain;
+}
+.icon7{
+    background: url("../images/icon7.png") no-repeat;
+    background-size: contain;
+}
+.icon8{
+    background: url("../images/icon8.png") no-repeat;
+    background-size: contain;
+}
+.icon9{
+    background: url("../images/icon9.png") no-repeat;
+    background-size: contain;
+}
+.icon10{
+    background: url("../images/icon10.png") no-repeat;
+    background-size: contain;
+}
+.master{
+    height: 0.9rem;
+    background: #fff;
+    border-top: 1px dashed #ddd;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.master-in{
+    width: 5.8rem;
+    height: 0.7rem;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+}
+.lik{
+    display: block;
+    font-size: 0.26rem;
+    color: #666;
+    line-height: 0.45rem;
+    text-align: left;
+    width: 4rem;
+    height: 0.45rem;
+    /* margin-left: 1.8rem; */
+    position: relative;
+     overflow: hidden; 
+    float: left;
+}
+.ininin{
+    width: 1.7rem;
+    height: 0.45rem;
+    font-size: 0.36rem;
+    color: #3698d9;
+    border-right: 1px solid #ddd;
+    float: left;
+}
+.lik ul{
+    overflow: hidden;
+    font-size: 0.26rem;
+    position: absolute;
+}
+.dj{
+    margin-top: 0.2rem;
+    height: 2.35rem;
+    background: #fff;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.jd-t{
+    height: 1.17rem;
+    display: flex;
+}
+.jd-t div{
+    flex: 1;
+    height: 0.92rem;
+    padding-top: 0.25rem;
+    text-align: center;
+}
+.jd-t div a p:nth-child(1){
+    font-size: 0.3rem;
+    color: #333;
+}
+.jd-t div a p:nth-child(2){
+    font-size: 0.2rem;
+    color: #999;
+}
+.t1{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.t2{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.t3{
+    border-bottom: 1px solid #eee;
+}
+.jd-d{
+    display: flex;
+    height: 1.17rem;
+}
+.jd-d div{
+    flex: 1;
+    height: 0.92rem;
+    padding-top: 0.25rem;
+    padding-left: 0.2rem;
+}
+.jd-d div a p:nth-child(1){
+    font-size: 0.3rem;
+    color: #333;
+}
+.jd-d div a p:nth-child(2){
+    font-size: 0.2rem;
+    color: #999;
+}
+.d1{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.d2{
+    border-bottom: 1px solid #eee;
+}
+.tools{
+    height: 2.1rem;
+    margin: 0.2rem 0 0.2rem 0;
+    background: #fff;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.tools-t{
+    height: 0.7rem;
+    border-bottom: 1px solid #eee;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #333;
+}
+.tools-d{
+    height: 1.4rem;
+    width: 6rem;
+    margin: 0 auto;
+    display: flex;
+}
+.tools-d ul{
+    display: flex;
+    flex: 1;
+}
+.tools-d ul li{
+    flex: 1;
+}
+.tools-d ul li a{
+    display: flex;
+    flex: 1;
+    height: 1.4rem;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.tools-d ul li a div{
+    height: 0.8rem;
+    width: 0.8rem;
+}
+.tools-d ul li a p{
+    font-size: 0.22rem;
+    margin-top: 0.1rem;
+    color: #333;
+}
+.tool-1{
+    background: url("../images/tool-1.png") no-repeat;
+    background-size: contain;
+}
+.tool-2{
+    background: url("../images/tool-2.png") no-repeat;
+    background-size: contain;
+}
+.tool-3{
+    background: url("../images/tool-3.png") no-repeat;
+    background-size: contain;
+}
+.tool-4{
+    background: url("../images/tool-4.png") no-repeat;
+    background-size: contain;
+}
+.tool-5{
+    background: url("../images/tool-5.png") no-repeat;
+    background-size: contain;
+}
+.hot-t{
+    display: flex;
+    height: 1.2rem;
+    flex-direction: row;
+    background: #fff; 
+}
+.hot-t div{
+    flex: 1;
+}
+.hot-t-l{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.hot-t-l a{
+    display: flex;
+    flex-direction: row;
+}
+.a1{
+    width: 1.8rem;
+    height: 1.2rem; 
+    font-size: 0.25rem;
+    color: #333;
+    text-align: center;
+}
+.a1 p{
+    margin-top: 0.2rem;
+}
+.a1 p span{
+    font-size: 0.2rem;
+    color: #999;
+}
+.hot-t-l a img{
+    width: 0.85rem;
+    height: 0.85rem; 
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;  
+}
+.hot-t-r a img{
+    width: 0.85rem;
+    height: 0.85rem; 
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;  
+}
+.hot-t-r{
+    border-bottom: 1px solid #eee;
+}
+.hot-t-r a{
+    display: flex;
+    flex-direction: row;
+}
+.a2{
+    width: 1.8rem;
+    height: 1.2rem; 
+    font-size: 0.25rem;
+    color: #333;
+    text-align: center;
+}
+.a2 p{
+    margin-top: 0.2rem;
+}
+.a2 p span{
+    font-size: 0.2rem;
+    color: #999;
+}
+.hot-d{
+    display: flex;
+    height: 1.2rem;
+    flex-direction: row;
+    background: #fff; 
+    margin-bottom: 0.2rem;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.hot-d div{
+    flex: 1;
+}
+.hot-d-l{
+    border-right: 1px solid #eee;
+}
+.hot-d-l a{
+    display: flex;
+    flex-direction: row;
+}
+.hot-d-l a img{
+    height: 0.85rem;
+    width: 0.85rem;
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;  
+}
+.a3{
+    width: 1.8rem;
+    height: 1.2rem; 
+    font-size: 0.25rem;
+    color: #333;
+    text-align: center;
+}
+.a3 p{
+    margin-top: 0.2rem;
+}
+.a3 p span{
+    font-size: 0.2rem;
+    color: #999;
+}
+.hot-d-r a{
+    display: flex;
+    flex-direction: row;
+}
+.a4{
+    width: 1.8rem;
+    height: 1.2rem; 
+    font-size: 0.25rem;
+    color: #333;
+    text-align: center;
+}
+.a4 p{
+    margin-top: 0.2rem;
+}
+.a4 p span{
+    font-size: 0.2rem;
+    color: #999;
+}
+.hot-d-r a img{
+    height: 0.85rem;
+    width: 0.85rem;
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;  
+}
+.push{
+    height: 3.3rem;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.push-top{
+    height: 0.7rem;
+    border-bottom: 2px solid #eee;
+    font-size: 0.28rem;
+    color: #333;
+    padding-left: 0.3rem;
+    line-height: 0.7rem;
+}
+.city{
+    display: flex;
+    flex-direction: row;
+}
+.city div{
+    flex: 1;
+}
+.city div a{
+    display: flex;
+    height: 2.58rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.city div a p{
+    font-size: 0.25rem;
+    color: #333;
+    text-align: center;
+}
+.city div a p span{
+    color: #999;
+    font-size: 0.16rem;
+}
+.city div a img{
+    height: 1.54rem;
+    width: 1.95rem;
+    margin: 0 auto;
+}
+.chongqing{
+    border-right: 1px solid #eee;
+}
+
+.dalian{
+    border-right: 1px solid #eee;
+}
+.service{
+    height: 3.55rem;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+    position: relative;
+}
+.service-top{
+    height: 0.7rem;
+    border-bottom: 3px solid #eee;
+    display: flex;
+    padding-left: 0.3rem;
+}
+.p1{
+    flex: 80%;
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.7rem;
+}
+.aa{
+    flex: 20%;
+    display: block;
+}
+.p2{
+    font-size: 0.28rem;
+    color: #9a9a9a;
+    line-height: 0.7rem;
+}
+.link{
+            display: block;
+            width: 5.9rem;
+            height: 1.7rem;
+            padding-top: 0.3rem;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .link ul{
+             width: 23.6rem; 
+        }
+            .link ul li{
+                float: left;
+            }
+.cent{
+    width: 5.9rem;
+    height: 1.7rem;
+    margin: 0 auto;
+}
+.cent-left{
+    width: 1.7rem;
+    height: 1.7rem; 
+    float: left;
+}
+.cent-left img{
+    height: 1.7rem;
+    width: 1.7rem; 
+}
+.cent-right{
+    padding-left: 0.18rem;
+    width: 4.02rem;
+    height: 1.7rem;
+    float: left;
+}
+.right-in{
+    display: flex;
+    height: 0.6rem;
+    flex-direction: row;
+}
+.right-in p{
+    height: 0.3rem;
+    flex: 1;
+}
+.in0{
+    font-size: 0.28rem;
+    color: #333; 
+    line-height: 0.3rem;
+    margin-right: 0.05rem;
+}
+.in1{
+    background: #f43e58;
+    font-size: 0.2rem;
+    border-radius: 0.05rem;
+    line-height: 0.3rem;
+    color: #fff;
+    text-align: center;
+}
+.in2{
+    font-size: 0.2rem;
+    color: #949494;
+    line-height: 0.3rem;
+    text-align: center;
+}
+.mid{
+    height: 0.8rem;
+    font-size: 0.2rem;
+    color: #949494;
+    overflow: hidden;
+}
+.bot{
+    height: 0.3rem;
+}
+.bot p{
+    text-align: center;
+}
+.bot1{
+    width: 0.4rem;
+    height: 0.24rem;
+    border: 0.01rem solid #4592cf;
+    font-size: 0.18rem;
+    color: #4592cf;
+    float: left;
+    margin-right: 0.06rem;
+}
+.bot2{
+    width: 0.76rem;
+    height: 0.24rem;
+    border: 0.01rem solid #4592cf;
+    font-size: 0.18rem;
+    color: #4592cf;
+    float: left;
+}
+.bot3{
+    height: 0.24rem;
+    font-size: 0.18rem;
+    color: #aaa;
+    float: right;
+}
+/* 图片滚动指示 */
+.point{
+    width: 2rem;
+    height: 0.1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0.2rem;
+}
+.active{
+    background: red;
+}
+.point ul li{
+    cursor: pointer;
+    width: 0.06rem;
+    height: 0.06rem;
+    border-radius: 50%;
+    border: 2px solid #f43e58;
+    float: left;
+    margin-left: 0.1rem; 
+}
+/* .point ul li.active, .point ul li:hover{
+    background: green;
+} */
+/* 下面是推荐环节 */
+.like{
+    height: auto;
+    background: #fff;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.like-top{
+    height: 0.7rem;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    padding-left: 0.3rem;
+    font-size: 0.28rem;
+    line-height: 0.7rem;
+}
+.likeLike{
+    height: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-top: 0.3rem;
+}
+.like-in{
+    width: 5.8rem;
+    height: 2rem;
+    margin: auto;
+}
+.in-left{
+    width: 1.7rem;
+    height: 1.7rem;
+    float: left;
+    
+}
+.in-left img{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.in-right{
+    width: 3.95rem;
+    height: 1.7rem;
+    float: right;
+    position: relative;
+}
+.right0{
+    height: 1rem;
+}
+.right0 p{
+    font-size: 0.28rem;
+    color: #333;
+}
+.right1{
+    height: 0.45rem;
+}
+.right1 p{
+    font-size: 0.25rem;
+    color: #ff6900;
+}
+.right2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.right2 p{
+    font-size: 0.18rem;
+    color: #b1b1b1;
+}
+.more{
+    width: 1rem;
+    height: 0.5rem;
+    margin: 0.3rem auto 0;
+    background: #3698d9;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.5rem;
+    box-shadow: 0.02rem 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.more p{
+    font-size: 0.27rem;
+    color: #fff;
+}
+/* dock 栏 */
+.foot{
+    height: 0.9rem;
+    border-top: 0.01rem solid #eee;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.foot ul{
+    display: flex;
+    flex: 1;
+}
+.foot ul li{
+    flex: 1;
+    height: 0.9rem;
+}
+.foot ul li a{
+    display: flex;
+    height: 0.9rem;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: #666;
+}
+.foot ul li a img{
+    height: 0.4rem;
+    width: 0.4rem;
+}
+.foot ul li a p{
+    font-size: 0.22rem;
+}
+.blue{
+    color: #3698d9;
+}

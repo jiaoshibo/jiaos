@@ -1,0 +1,231 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none}
+body{
+    background: #f4f4f4;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+/**
+ * 2016-01-13 订正
+ * 做适当限制
+ * 大于640的屏幕 固定为100px
+ * 同时需要对body或者最外层wrapper做max-width: 640px的限制
+ */
+/*
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+*/
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+.tit{
+    height: 1rem;
+    background: #3698d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.tit-in{
+    width: 5.8rem;
+    height: 1rem;
+    margin: auto;
+}
+.tit-in p{
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.36rem;
+    color: #fff;
+    padding-left: 0.7rem;
+}
+.tit-in p a{
+    float: right;
+    font-size: 0.3rem;
+    color: #fff;
+}
+/* 顶栏部分结束 */
+.touxiang{
+    height: 3rem;
+    background: #3698d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.touxiang img{
+    height: 1.42rem;
+    width: 1.43rem;
+    border: 2px solid #fff;
+}
+.touxiang p{
+    font-size: 0.3rem;
+    color: #fff;
+    margin-top: 0.3rem;
+}
+.txt{
+    background: #fff;
+    height: 2.7rem;
+    display: flex;
+    flex-direction: column;
+}
+.t{
+    flex: 1;
+    width: 6rem;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+     display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.phone{
+    height: 0.3rem;
+    width: 0.3rem;
+    background: url("../images/phone.png") no-repeat;
+    background-size: contain;
+}
+.teng{
+    height: 0.3rem;
+    width: 0.3rem;
+    background: url("../images/teng.png") no-repeat;
+    background-size: contain;
+}
+.weixin{
+    height: 0.3rem;
+    width: 0.3rem;
+    background: url("../images/weixin.png") no-repeat;
+    background-size: contain;
+}
+.t p{
+    font-size: 0.3rem;
+    color: #333;
+}
+.t span{
+    font-size: 0.3rem;
+    position: absolute;
+    right: 0;
+}
+.last{
+    height:3.5rem;
+    background: #fff;
+    padding-top: 1rem;
+}
+.last-in{
+    height: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+}
+.inin{
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+.inin a{
+    display: flex;
+    flex: 1;
+    font-size: 0.3rem;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.3rem;
+}
+.inin a p{
+    padding-left: 0.3rem;
+    color: #333; 
+}
+.in1{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url("../images/xiaoxi.png") no-repeat;
+    background-size: contain;
+}
+.in2{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url("../images/ling.png") no-repeat;
+    background-size: contain;
+}
+/* dock 栏 */
+.foot{
+    height: 0.9rem;
+    border-top: 0.01rem solid #eee;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.foot ul{
+    display: flex;
+    flex: 1;
+}
+.foot ul li{
+    flex: 1;
+    height: 0.9rem;
+}
+.foot ul li a{
+    display: flex;
+    height: 0.9rem;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: #666;
+}
+.foot ul li a img{
+    height: 0.4rem;
+    width: 0.4rem;
+}
+.foot ul li a p{
+    font-size: 0.22rem;
+}
+.blue{
+    color: #3698d9; 
+}

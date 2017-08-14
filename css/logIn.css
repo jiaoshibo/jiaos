@@ -1,0 +1,206 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+/**
+ * 2016-01-13 订正
+ * 做适当限制
+ * 大于640的屏幕 固定为100px
+ * 同时需要对body或者最外层wrapper做max-width: 640px的限制
+ */
+/*
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+*/
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+.top{
+    height: 1rem;
+    background: #3698d9;
+}
+.top-in{
+    width: 90.6%;
+    height: 1rem;
+    margin: 0 auto;
+}
+.top-in p{
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.36rem;
+    color: #fff;
+}
+.top-in p a{
+    float: left;
+    line-height: 1rem;
+    color: #fff;
+}
+
+.neirong-in{
+    width: 94%;
+    margin: 0 auto;
+}
+.zhanghao{
+    height: 1.8rem;
+    position: relative;
+}
+.zhanghao p{
+    font-size: 0.3rem;
+    color: #333;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+.zhanghao input{
+    width: 100%;
+    height: 0.6rem;
+    border:0;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    font-size: 0.26rem;
+}
+.mima{
+    height: 1.8rem;
+    position: relative;
+}
+.mima p{
+    font-size: 0.3rem;
+    color: #333;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+.mima input{
+    width: 100%;
+    height: 0.6rem;
+    border:0;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    font-size: 0.26rem;
+}
+.denglu{
+    height: auto;
+}
+.btn{
+    margin-top: 0.6rem;
+    height: 0.7rem;
+    position: relative;
+}
+
+.btn a input{
+    width: 100%;
+    height: 0.7rem;
+    background: #3698d9;
+    outline: none;
+    border: 0;
+    border-radius: 0.05rem;
+    color: #fff;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 0;
+    -webkit-appearance:none;
+}
+.btn-d{
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+.btn-d a:nth-child(1){
+    float: left;
+    font-size: 0.26rem;
+    color: #3698d9;
+    
+}
+.btn-d a:nth-child(2){
+    float: right;
+    font-size: 0.26rem;
+    color: #3698d9;
+}
+.down{
+    height: 4.4rem;
+}
+.disanfang{
+    height: 1.5rem;
+    color: #999;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.26rem;
+}
+.qqWechat{
+    height: 2.9rem;
+}
+.qq{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.qq a{
+    display: block;
+    height: 1.16rem;
+    width: 1.16rem;
+    background: url("../images/qq.png");
+    background-size: 100%;
+    margin: 0.5rem auto;
+}
+.wechat{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.wechat a{
+    display: block;
+    height: 1.16rem;
+    width: 1.16rem;
+    background: url("../images/wechat.png");
+    background-size: 100%;
+    margin: 0.5rem auto;
+}
+.p{
+    width:100%;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #333;
+}

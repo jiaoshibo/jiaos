@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+input {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56px; } }
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 63px; } }
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 69px; } }
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px; } }
+html {
+  font-size: 15.625vw; }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px; } }
+body {
+  font-size: 0.01rem; }
+
+.zhuce-header {
+  display: flex;
+  background: #3698d9;
+  padding: 0.25rem 0.2rem; }
+  .zhuce-header a {
+    width: 3%;
+    display: inline-block; }
+    .zhuce-header a img {
+      width: 100%;
+      margin-top: 0.05rem; }
+  .zhuce-header p {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.36rem;
+    margin-left: 35%; }
+
+.meiyou {
+  display: flex;
+  flex-direction: column; }
+  .meiyou img {
+    width: 25%;
+    display: block;
+    margin: 2.25rem auto 0.3rem; }
+  .meiyou p {
+    text-align: center;
+    color: #999999; }
+
+/*# sourceMappingURL=meiyouxiaoxi.css.map */

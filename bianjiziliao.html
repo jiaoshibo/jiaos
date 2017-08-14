@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑资料</title>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bianjiziliao.css">
+    <script src="js/zepto.js"></script>
+</head>
+<body>
+    <div class="tit"><!-- 顶栏 -->
+        <div class="tit-in">
+            <p>
+                我的<a class="back" href="mine.html"><i class="fa fa-angle-left"></i></a>
+                <a class="save" href="mine.html">
+                    保存
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- 顶栏end -->
+    <div class="cont">
+        <div class="cont-0 cont-1">
+            <p class="pp">头像</p>
+            <img src="images/touxiang.jpg"/>
+        </div>
+        <div class="cont-0 cont-2">
+            <p>昵称
+                <input type="text" value="下流梗恐怖分子">
+            </p>
+        </div>
+        <div class="cont-0 cont-3">
+            <p>手机号
+                <input type="text" value="88888888888">
+            </p>
+        </div>
+        <div class="cont-0 cont-4">
+            <p>QQ
+                <input type="text" value="8888888">
+            </p>
+        </div>
+        <div class="cont-0 cont-5">
+            <p>微信
+                <!-- <span>没有</span> -->
+            </p>
+        </div>
+    </div>
+    <!-- 底栏start -->
+    <div class="foot">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="images/home.png"/>
+                    <p>智信联盟</p>
+                </a>
+            </li>
+            <li>
+                <a href="anli.html">
+                    <img src="images/cube.png"/>
+                    <p>案例</p>
+                </a>
+            </li>
+            <li>
+                <a href="zixun.html">
+                    <img src="images/message.png"/>
+                    <p>咨询</p>
+                </a>
+            </li>
+            <li>
+                <a href="mine.html">
+                    <img src="images/blueme.png" alt="">
+                    <p class="blue">我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 底栏end -->
+    <script>
+        var bbb=$(".cont-0")
+        console.log(bbb[0])
+    </script>
+</body>
+</html>

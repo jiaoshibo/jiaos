@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+input {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56px; } }
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 63px; } }
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 69px; } }
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px; } }
+html {
+  font-size: 15.625vw; }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px; } }
+body {
+  font-size: 0.01rem; }
+
+.zhuce-header {
+  display: flex;
+  background: #3698d9;
+  padding: 0.25rem 0.2rem; }
+  .zhuce-header a {
+    width: 3%;
+    display: inline-block; }
+    .zhuce-header a img {
+      width: 100%;
+      margin-top: 0.05rem; }
+  .zhuce-header p {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.36rem;
+    margin-left: 40.5%; }
+
+.mm {
+  padding: 0 0.2rem; }
+  .mm .mma {
+    flex-direction: column;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #eeeeee; }
+    .mm .mma p {
+      font-size: 0.3rem;
+      padding-top: 0.45rem;
+      padding-bottom: 0.35rem; }
+      .mm .mma p span {
+        color: red; }
+    .mm .mma .btn1 {
+      width: 70%;
+      border: 0;
+      font-size: 0.26rem;
+      color: #999999; }
+    .mm .mma .btn2 {
+      width: 30%;
+      float: right;
+      border: 0;
+      background: #3698d9;
+      font-size: 0.26rem;
+      border-radius: 0.05rem; }
+  .mm a {
+    display: block;
+    margin: 0.8rem 0 0;
+    padding: 0.2rem 0;
+    font-size: 0.3rem;
+    background: #3698d9;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.1rem; }
+
+/*# sourceMappingURL=zhucexiayibu.css.map */
